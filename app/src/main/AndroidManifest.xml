@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.expient.activity">
+
+    <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Dark">
+        <activity
+            android:name=".EulaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtpInputActivity" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".Order_Medicines_Search" />
+        <activity android:name=".View_patients_activity" />
+        <activity
+            android:name=".Add_new_patient_activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".Order_Medicine_First" />
+        <activity android:name=".Medicine_Purchase_History" />
+        <activity android:name=".Medicine_Order_Status" />
+        <activity android:name=".Track_Order" />
+        <activity android:name=".Order_Medicine_Prescription" />
+        <activity
+            android:name=".Camcoder_prescription_capture"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity android:name=".Manual_medicine_enter" />
+        <activity android:name=".Order_Progress_Activity"></activity>
+    </application>
+
+</manifest>

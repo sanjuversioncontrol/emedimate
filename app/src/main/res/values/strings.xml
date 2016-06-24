@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">eMedimate</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_eula">END USER LICENCE AGREEMENT</string>
+    <string name="content_activity_eula">[ READ THIS END USER LICENSE AGREEMENT ("EULA")CAREFULLY,BECAUSE BY SELECT.ING"I ACCEPT" OR OTHERWISE INSTALLING.COPYING ,USING OR DISTRIBUTING THE SOFTWARE ,YOU ARE AGREEING TO BE BOUND BY THESE TERMS AND CONDITIONS.IF TOU DO NOT AGREE TO ALL THESE TERMS AND CONDITIONS OR DO NOT WISH TO BE BOUND BY THIS EULA ,DO NOT CLICK "I ACCEPT", INSTALL ,COPY ,USE OR DISTRIBUTE THIS SOFTWARE.]                                                                                                      1.GENERAL:This EULA governs the use of the software made available by or on behalf of medicine on wheels software ,inc ("medicine on wheels","we","us" or "our").for purposes of this EULA,"Software",together with all components there of and all update ,patches,fixes,modifications and enhancement s thereto, including releases of new versions ,whether provided to you via download ,automatically without additional consent or action on your part or otherwise ,and any and all accompanying documentation,files and materials. </string>
+
+    <string name="btn_signup_submit">SUBMIT</string>
+    <string name="edt_signup_name">Name</string>
+    <string name="edt_signup_mobile">Mobile Number</string>
+    <string name="edt_signup_mail">E-Mail</string>
+    <string name="otp_message">Sit back and Relax! We will send an SMS to verify your mobile number</string>
+    <string name="otp_message_if">(Enter OTP below incase of automatic verification failed)</string>
+
+    <string name="btn_header_home">Home</string>
+    <string name="btn_header_feedback">Feedback</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+
+    <string name="btn1">VIEW PATIENTS</string>
+    <string name="btn2">ADD PATIENT</string>
+    <string name="btn3">ORDER MEDICINES</string>
+    <string name="btn4">PURCHASE HISTORY</string>
+    <string name="btn5">ORDER STATUS</string>
+    <string name="btn6">TRACK ORDER</string>
+    <string name="HomeActivityTitle">E-MEDIMATE</string>
+
+    <string name="toolbarTitle">E-MEDIMATE</string>
+    <string name="title_activity_view_patients_activity">View_patients_activity</string>
+
+    <string name="column_title1">Id</string>
+    <string name="column_title2">Name</string>
+    <string name="column_title3">Location</string>
+    <string name="column_title4">Details</string>
+    <string name="column_title5">Medicines</string>
+    <string name="column_title6">Recent Orders</string>
+
+    <!--ADD MEDICINE -->
+    <string name="med_column_title1">Medicine</string>
+    <string name="med_column_title2">Quantity</string>
+    <string name="med_column_title3">Dosage</string>
+
+    <!--ADD NEW PATIENT -->
+    <string name="edt_add_loc">Enter Location</string>
+    <string name="edt_add_name">Name</string>
+    <string name="edt_add_dob">DOB</string>
+    <string name="edt_add_email">E-Mail</string>
+    <string name="edt_add_mob">Mobile NUmber</string>
+    <string name="edt_add_address">Delivery Address</string>
+
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_mob">Enter Mobile Number</string>
+    <string name="err_msg_dob">Enter your correct DOB</string>
+    <string name="err_msg_loc">Enter valid Location</string>
+    <string name="err_msg_address">Enter Address</string>
+    <string name="search_order_hint">Enter Order No</string>
+    <string name="search_hint">Enter Id OR Name</string>
+
+
+
+</resources>

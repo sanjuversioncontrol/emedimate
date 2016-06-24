@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed state -->
+    <item android:state_pressed="true">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+               android:insetLeft="50dp"
+               android:insetTop="50dp"
+               android:insetRight="50dp"
+               android:insetBottom="50dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp"/>
+                <solid android:color="@color/accent"/>
+                <padding android:left="50dp"
+                         android:top="50dp"
+                         android:right="50dp"
+                         android:bottom="50dp"/>
+            </shape>
+        </inset>
+    </item>
+
+    <!-- focused state -->
+    <item android:state_focused="true">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+               android:insetLeft="50dp"
+               android:insetTop="50dp"
+               android:insetRight="50dp"
+               android:insetBottom="50dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp"/>
+                <solid android:color="@color/accent"/>
+                <padding android:left="50dp"
+                         android:top="50dp"
+                         android:right="50dp"
+                         android:bottom="50dp"/>
+            </shape>
+        </inset>
+    </item>
+
+    <!-- normal state -->
+    <item>
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+               android:insetLeft="50dp"
+               android:insetTop="50dp"
+               android:insetRight="50dp"
+               android:insetBottom="50dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp"/>
+                <!--<solid android:color="@color/NORMAL_STATE_COLOR" />-->
+                <padding android:left="50dp"
+                         android:top="50dp"
+                         android:right="50dp"
+                         android:bottom="50dp"/>
+            </shape>
+        </inset>
+    </item>
+</selector>

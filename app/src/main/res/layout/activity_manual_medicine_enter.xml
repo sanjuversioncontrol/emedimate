@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/content_main" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_marginTop="58dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD MEDICINE DETAILS AND QUANTITY"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/patient_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textStyle="bold"
+                        android:padding="20dip"
+                        android:gravity="center"
+                        android:background="@color/blue"
+                        android:text="@string/med_column_title1"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textStyle="bold"
+                        android:padding="20dip"
+                        android:gravity="center"
+                        android:background="@color/blue"
+                        android:text="@string/med_column_title2"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textStyle="bold"
+                        android:padding="20dip"
+                        android:gravity="center"
+                        android:background="@color/blue"
+                        android:text="@string/med_column_title3"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_med1"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Med 1"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_qnty1"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Qnty1"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_dos1"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="eg:1-0-1"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="fill_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_med2"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Med 2"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_qnty2"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Qnty2"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_dos2"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="eg:1-0-1"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="fill_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_med3"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Med 3"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_qnty3"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Qnty3"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_dos3"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="eg:1-0-1"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="fill_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_med4"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Med 4"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_qnty4"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Qnty4"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText android:id="@+id/input_dos4"
+                            android:background="@drawable/bottom_border"
+                            android:textColor="@color/black"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="eg:1-0-1"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+            </TableLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:padding="12dp"
+                android:text="Preview My Order"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/content_main" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="58dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TableLayout
+            android:id="@+id/patient_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:text="@string/column_title1"
+                    android:shadowColor="#00ccff"
+                    android:shadowRadius="1.5"
+                    android:shadowDx="1"
+                    android:shadowDy="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:text="@string/column_title2"
+                    android:shadowColor="#00ccff"
+                    android:shadowRadius="1.5"
+                    android:shadowDx="1"
+                    android:shadowDy="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:text="@string/column_title3"
+                    android:shadowColor="#00ccff"
+                    android:shadowRadius="1.5"
+                    android:shadowDx="1"
+                    android:shadowDy="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:text="@string/column_title4"
+                    android:shadowColor="#00ccff"
+                    android:shadowRadius="1.5"
+                    android:shadowDx="1"
+                    android:shadowDy="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:text="@string/column_title5"
+                    android:shadowColor="#00ccff"
+                    android:shadowRadius="1.5"
+                    android:shadowDx="1"
+                    android:shadowDy="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:text="@string/column_title6"
+                    android:shadowColor="#00ccff"
+                    android:shadowRadius="1.5"
+                    android:shadowDx="1"
+                    android:shadowDy="1"/>
+            </TableRow>
+            <View
+                android:layout_height="2dip"
+                android:background="#FFFFFF" />
+
+
+        </TableLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add" />
+
+</android.support.design.widget.CoordinatorLayout>
